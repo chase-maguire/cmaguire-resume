@@ -1,0 +1,76 @@
+@font-face {
+    font-family: JetBrainMono;
+    src: url(../assets/JetBrainsMono-Medium.ttf);
+}
+
+body {
+    border: 30px solid #57ca2a; /* Change the color code to the desired color */
+    margin: 0; /* Remove default margin to ensure the border fits the entire viewport */
+    padding: 0; /* Remove default padding */
+}
+
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 70px;
+    margin-left: 70px;
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    font-family: 'JetBrainMono';
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+nav {
+    display: inline-block;
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 20px;
+    font-family: 'JetBrainMono';
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contentWrapper {
+    display: flex; /* Use flexbox to align the text block and image */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column; /* Make the flex items stack vertically */
+    justify-content: center; /* Center the flex items vertically */
+    align-items: center; /* Center the flex items horizontally */
+    height: 80vh;
+}
+
+.nameText {
+    font-family: 'JetBrainMono';
+    font-size: 30px;
+    color:#57ca2a;
+}
+
+.introText {
+    font-family: 'JetBrainMono';
+    font-size: 20px;
+}
+
+.otherText {
+    font-family: 'JetBrainMono';
+    color: rgb(131, 131, 131);
+}
+
+.imageContainer {
+    margin-left: 100px;
+}
