@@ -19,7 +19,7 @@ body {
     border-bottom: 1px solid black;
 }
 
-h1 {
+.headerContainer h1 {
     font-family: 'JetBrainMono';
     display: inline-block;
     padding: 20px;
@@ -47,12 +47,18 @@ nav a {
     justify-content: center; /* Horizontally center the items */
 }
 
+.contentWrapperArt {
+    display: flex; /* Use flexbox to align the text block and image */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+}
+
 .mainContent {
     display: flex;
     flex-direction: column; /* Make the flex items stack vertically */
     justify-content: center; /* Center the flex items vertically */
     align-items: center; /* Center the flex items horizontally */
-    height: 80vh;
+    height: 100vh
 }
 
 .nameText {
@@ -75,10 +81,22 @@ nav a {
     margin-left: 100px;
 }
 
+.imageContainer img {
+    height: 690px;
+}
+
 .boundingBox {
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, .9) 50%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%);
     padding: 15px;
     border-radius: 10px;
+}
+
+.boundingBoxWork {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 2%, rgba(255, 255, 255, .9) 50%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    margin-left: 20px;
 }
 
 .boundingBox p {
