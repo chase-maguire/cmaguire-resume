@@ -7,6 +7,7 @@ body {
     border: 30px solid #57ca2a; /* Change the color code to the desired color */
     margin: 0; /* Remove default margin to ensure the border fits the entire viewport */
     padding: 0; /* Remove default padding */
+    
 }
 
 
@@ -41,6 +42,15 @@ nav a {
     font-size: 15px;
 }
 
+a {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 20px;
+    font-family: 'JetBrainMono';
+    font-weight: bold;
+    font-size: 15px;
+}
+
 .contentWrapper {
     display: flex; /* Use flexbox to align the text block and image */
     align-items: center; /* Vertically center the items */
@@ -51,14 +61,24 @@ nav a {
     display: flex; /* Use flexbox to align the text block and image */
     align-items: center; /* Vertically center the items */
     justify-content: center; /* Horizontally center the items */
+    padding: 20px;
 }
 
-.mainContent {
+/* .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 200px;
+} */
+
+.mainContentHomePage {
     display: flex;
     flex-direction: column; /* Make the flex items stack vertically */
     justify-content: center; /* Center the flex items vertically */
     align-items: center; /* Center the flex items horizontally */
-    height: 100vh
+    height: 100vh;
 }
 
 .nameText {
@@ -82,7 +102,7 @@ nav a {
 }
 
 .imageContainer img {
-    height: 690px;
+    height: 60vh;
 }
 
 .boundingBox {
@@ -95,7 +115,7 @@ nav a {
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 2%, rgba(255, 255, 255, .9) 50%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%);
     padding: 15px;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
     margin-left: 20px;
 }
 
