@@ -57,6 +57,15 @@ a {
     justify-content: center; /* Horizontally center the items */
 }
 
+@media screen and (max-width: 900px) {
+    .contentWrapper {
+        display: flex; /* Use flexbox to align the text block and image */
+        align-items: center; /* Vertically center the items */
+        justify-content: center; /* Horizontally center the items */
+        flex-direction: column;
+    }
+ }
+
 .contentWrapperArt {
     display: flex; /* Use flexbox to align the text block and image */
     align-items: center; /* Vertically center the items */
@@ -100,16 +109,17 @@ a {
 }
 
 .imageContainer {
-    margin-left: 100px;
 }
 
 .imageContainer img {
-    height: 60vh;
+    width: 60vh;
+    height:auto;
 }
 
 @media screen and (max-width: 900px) {
     .imageContainer img {
-       height: 40vh;
+       width: 40vh;
+       height:auto;
     }
  }
 
