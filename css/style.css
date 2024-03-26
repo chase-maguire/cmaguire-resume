@@ -64,14 +64,16 @@ a {
     padding: 20px;
 }
 
-/* .mainContent {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin-top: 200px;
-} */
+@media screen and (max-width: 900px) {
+    .contentWrapperArt {
+        display: flex; /* Use flexbox to align the text block and image */
+        align-items: center; /* Vertically center the items */
+        justify-content: center; /* Horizontally center the items */
+        padding: 20px;
+        flex-direction: column;
+    }
+ }
+
 
 .mainContentHomePage {
     display: flex;
@@ -104,6 +106,12 @@ a {
 .imageContainer img {
     height: 60vh;
 }
+
+@media screen and (max-width: 900px) {
+    .imageContainer img {
+       height: 40vh;
+    }
+ }
 
 .boundingBox {
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 5%, rgba(255, 255, 255, .9) 50%, rgba(255, 255, 255, 0.5) 95%, rgba(255, 255, 255, 0) 100%);
